@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Amazon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Mini Amazon</h2>
+    <input type="text" id="search" placeholder="Search products..." onkeyup="searchProduct()">
+    <a href="cart.html" class="cart-btn">Cart 🛒</a>
+</header>
+
+<div class="products" id="productGrid"></div>
+
+<!-- Product Modal -->
+<div class="modal" id="productModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImg">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <p id="modalPrice"></p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
